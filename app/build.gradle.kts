@@ -55,4 +55,7 @@ dependencies {
 
 //    Picasso
     implementation("com.squareup.picasso:picasso:2.71828")
+
+//    Navigation button animation
+    implementation("nl.joery.animatedbottombar:library:1.1.0")
 }
