@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Elec-App</string>
+<!--    Bottom Navigation Menu-->
+    <string name="home">Home</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
 </resources>
