@@ -5,4 +5,10 @@
     <string name="tutorial">Tutorial</string>
     <string name="message">Message</string>
     <string name="profile">Profile</string>
+
+<!--    Fragment Home-->
+    <string name="get_20_off">Get 20% Off</string>
+    <string name="on_your">On Your</string>
+    <string name="favourite_brands">Favourite Brands</string>
+    <string name="featured_products">Popular Products</string>
 </resources>
