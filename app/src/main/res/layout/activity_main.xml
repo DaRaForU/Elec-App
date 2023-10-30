@@ -14,7 +14,7 @@
 
     <nl.joery.animatedbottombar.AnimatedBottomBar
         android:id="@+id/bottom_bar"
-        android:background="#DFDDDD"
+        android:background="@color/home_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:abb_selectedTabType="text"
