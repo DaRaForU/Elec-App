@@ -34,7 +34,7 @@ class ListProducts1Adapter: ListAdapter<ListProducts1, ListProducts1Adapter.Prod
     }
 
 
-    //Class View Holder
+    //Class View Holder1
     class ProductViewHolder1(val itemBinding: ViewHolder1Binding): RecyclerView.ViewHolder(itemBinding.root){
 
         fun bind(listProducts1: ListProducts1){
