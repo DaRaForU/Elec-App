@@ -14,14 +14,16 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            android:elevation="4dp"
+            >
 
             <ImageView
                 android:id="@+id/viewHolder1Img"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_tutorial"
-                 />
+                android:background="@drawable/border_card_item"/>
 
         </androidx.cardview.widget.CardView>
 
