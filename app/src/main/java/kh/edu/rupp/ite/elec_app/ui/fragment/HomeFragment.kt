@@ -41,7 +41,7 @@ class HomeFragment: Fragment() {
 
         loadListProduct1FromServer();
 
-        loadListProduct1FromSever();
+        loadListProduct2FromServer();
     }
 
 
@@ -83,7 +83,7 @@ class HomeFragment: Fragment() {
         binding.recyclerview1.adapter = adapter;
     }
 
-    private fun loadListProduct1FromSever(){
+    private fun loadListProduct2FromServer(){
         //Create retrofit Client
         val httpClient = Retrofit.Builder()
             .baseUrl("https://retoolapi.dev")
