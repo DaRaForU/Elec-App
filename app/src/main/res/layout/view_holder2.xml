@@ -10,15 +10,73 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/viewHolder2Img"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewImage"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/img_discount"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/border_card_item"/>
+            app:cardCornerRadius="20dp"
+            android:elevation="12dp"
+            app:cardElevation="12dp"
+            android:layout_margin="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/viewHolder2Img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_discount"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="38dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:backgroundTint="#FF7575"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="4dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/icRating"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@mipmap/ic_rating"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/viewHolder2Rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toEndOf="@id/icRating"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginEnd="2dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:id="@+id/viewHolder2Name"
@@ -26,50 +84,11 @@
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewHolder2Img"
+            app:layout_constraintTop_toBottomOf="@id/cardViewImage"
             android:layout_marginStart="5dp"
             android:textSize="14sp"
             android:layout_marginTop="5dp"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="38dp"
-            android:layout_height="25dp"
-            android:backgroundTint="#FF7575"
-            app:layout_constraintEnd_toEndOf="@id/viewHolder2Img"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="4dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/icRating"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:src="@mipmap/ic_rating"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
-
-                <TextView
-                    android:id="@+id/viewHolder2Rating"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4.5"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@id/icRating"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:layout_marginEnd="2dp"/>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
+        
         <TextView
             android:id="@+id/txtDollar"
             android:layout_width="wrap_content"
