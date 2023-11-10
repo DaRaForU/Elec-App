@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.elec_app.ui.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import kh.edu.rupp.ite.elec_app.api.model.ListProducts2
 import kh.edu.rupp.ite.elec_app.databinding.ViewHolder2Binding
+import kh.edu.rupp.ite.elec_app.ui.activity.ProductDetailsActivity
 
 class ListProducts2Adapter : ListAdapter<ListProducts2, ListProducts2Adapter.ProductViewHolder2>(
     object : DiffUtil.ItemCallback<ListProducts2>(){
@@ -40,6 +42,17 @@ class ListProducts2Adapter : ListAdapter<ListProducts2, ListProducts2Adapter.Pro
             itemBinding.viewHolder2Rating.text = listProducts2.rating
             itemBinding.viewHolder2Name.text = listProducts2.name;
             itemBinding.viewHolder2Price.text = listProducts2.price;
+
+
+            itemBinding.root.setOnClickListener{
+                val intent = Intent(itemBinding.root.context, ProductDetailsActivity::class.java);
+                intent.putExtra("name", listProducts2.name);
+                intent.putExtra("image", listProducts2.image);
+                intent.putExtra("price", listProducts2.price);
+                intent.putExtra("description", listProducts2.description);
+
+                itemBinding.root.context.startActivity(intent);
+            }
         }
     }
 }

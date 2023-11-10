@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEF1FF">
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardBodyProductDetails"
+        android:layout_marginStart="18dp"/>
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintStart_toEndOf="@id/icBack"
+        app:layout_constraintTop_toTopOf="@id/icBack"
+        app:layout_constraintBottom_toBottomOf="@id/icBack"
+        android:textSize="30sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardBodyProductDetails"
+        android:layout_marginEnd="18dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_shopping_cart"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBodyProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="120dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardImgDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="220dp"
+                        app:cardCornerRadius="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp">
+
+                        <ImageView
+                            android:id="@+id/imgProductDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img_test"
+                            android:scaleType="centerCrop"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/NameProductDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/resistor"
+                        app:layout_constraintStart_toStartOf="@id/cardImgDetails"
+                        app:layout_constraintTop_toBottomOf="@id/cardImgDetails"
+                        app:layout_constraintEnd_toEndOf="@id/cardImgDetails"
+                        android:layout_marginTop="20dp"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="18dp"/>
+
+                    <TextView
+                        android:id="@+id/txtDollarDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        app:layout_constraintStart_toStartOf="@id/NameProductDetails"
+                        app:layout_constraintTop_toBottomOf="@id/NameProductDetails"
+                        android:textSize="25sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#6C53FD"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/priceProductDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        app:layout_constraintStart_toEndOf="@id/txtDollarDetails"
+                        app:layout_constraintTop_toTopOf="@id/txtDollarDetails"
+                        android:textSize="25sp"
+                        android:textColor="#6C53FD"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"/>
+
+                    <TextView
+                        android:id="@+id/descriptionProductDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lorem"
+                        app:layout_constraintStart_toStartOf="@id/NameProductDetails"
+                        app:layout_constraintEnd_toEndOf="@id/cardImgDetails"
+                        app:layout_constraintTop_toBottomOf="@id/priceProductDetails"
+                        android:textSize="18sp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardButtonAddToCart"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/descriptionProductDetails"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:backgroundTint="#4D6EF6"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="50dp"
+                        android:layout_marginBottom="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txtAddToCart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_to_cart"
+                                android:layout_gravity="center"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"/>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
