@@ -26,4 +26,12 @@
     <string name="add_to_cart">Add To Cart</string>
     <string name="resistor">Resistor</string>
     <string name="lorem">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.</string>
+
+<!--    Activity Sign Up-->
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    
 </resources>
