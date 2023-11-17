@@ -1,0 +1,5 @@
+<!-- res/drawable/rounded_avatar_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/avatar_bg_blue" />
+    <corners android:radius="500dp" /> <!-- Adjust the radius as needed -->
+</shape>
