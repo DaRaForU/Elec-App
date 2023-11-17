@@ -2,7 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+
 
 <!--    Home-->
     <color name="home_color">#FDECE3</color>
+    <color name="avatar_bg_blue">#8989FF</color>
+
 </resources>
