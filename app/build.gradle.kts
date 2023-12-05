@@ -57,4 +57,8 @@ dependencies {
 
 //    Navigation button animation
     implementation("nl.joery.animatedbottombar:library:1.1.0")
+
+//    ViewModel and LiveData
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 }

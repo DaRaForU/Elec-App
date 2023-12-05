@@ -1,13 +1,13 @@
-package kh.edu.rupp.ite.elec_app.ui.activity
+package kh.edu.rupp.ite.elec_app.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import kh.edu.rupp.ite.elec_app.ui.fragment.HomeFragment
-import kh.edu.rupp.ite.elec_app.ui.fragment.MessageFragment
-import kh.edu.rupp.ite.elec_app.ui.fragment.ProfileFragment
+import kh.edu.rupp.ite.elec_app.view.fragment.HomeFragment
+import kh.edu.rupp.ite.elec_app.view.fragment.MessageFragment
+import kh.edu.rupp.ite.elec_app.view.fragment.ProfileFragment
 import kh.edu.rupp.ite.elec_app.R
-import kh.edu.rupp.ite.elec_app.ui.fragment.TutorialFragment
+import kh.edu.rupp.ite.elec_app.view.fragment.TutorialFragment
 import kh.edu.rupp.ite.elec_app.databinding.ActivityMainBinding
 import nl.joery.animatedbottombar.AnimatedBottomBar
 

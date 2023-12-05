@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.elec_app.api.model
+package kh.edu.rupp.ite.elec_app.model.model
 
 import com.google.gson.annotations.SerializedName
 
