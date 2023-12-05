@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.elec_app.ui.activity
+package kh.edu.rupp.ite.elec_app.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,20 +1,20 @@
-package kh.edu.rupp.ite.elec_app.ui.fragment
+package kh.edu.rupp.ite.elec_app.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kh.edu.rupp.ite.elec_app.databinding.FragmentProfileBinding
+import kh.edu.rupp.ite.elec_app.databinding.FragmentMessageBinding
 
-class ProfileFragment: Fragment() {
-    private lateinit var binding: FragmentProfileBinding;
+class MessageFragment: Fragment() {
+    private lateinit var binding: FragmentMessageBinding;
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentProfileBinding.inflate(layoutInflater);
+        binding = FragmentMessageBinding.inflate(layoutInflater);
         return binding.root;
     }
 }

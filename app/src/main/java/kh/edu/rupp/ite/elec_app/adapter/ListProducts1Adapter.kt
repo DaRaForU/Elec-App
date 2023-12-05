@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.elec_app.ui.adapter
+package kh.edu.rupp.ite.elec_app.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kh.edu.rupp.ite.elec_app.api.model.ListProducts1
+import kh.edu.rupp.ite.elec_app.model.model.ListProducts1
 import kh.edu.rupp.ite.elec_app.databinding.ViewHolder1Binding
-import kh.edu.rupp.ite.elec_app.ui.activity.ProductDetailsActivity
+import kh.edu.rupp.ite.elec_app.view.activity.ProductDetailsActivity
 
 class ListProducts1Adapter: ListAdapter<ListProducts1, ListProducts1Adapter.ProductViewHolder1>(
     object: DiffUtil.ItemCallback<ListProducts1>(){

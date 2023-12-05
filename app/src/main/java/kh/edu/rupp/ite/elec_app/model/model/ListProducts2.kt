@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.elec_app.api.model
+package kh.edu.rupp.ite.elec_app.model.model
 
 data class ListProducts2(
     val image: String,

@@ -1,7 +1,7 @@
-package kh.edu.rupp.ite.elec_app.api.service
+package kh.edu.rupp.ite.elec_app.model.service
 
-import kh.edu.rupp.ite.elec_app.api.model.ListProducts1
-import kh.edu.rupp.ite.elec_app.api.model.ListProducts2
+import kh.edu.rupp.ite.elec_app.model.model.ListProducts1
+import kh.edu.rupp.ite.elec_app.model.model.ListProducts2
 import retrofit2.Call
 import retrofit2.http.GET
 
