@@ -4,6 +4,7 @@ import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import kh.edu.rupp.ite.elec_app.model.client.ApiClient
 import kh.edu.rupp.ite.elec_app.model.model.ApiData
 import kh.edu.rupp.ite.elec_app.model.model.ListProducts1
 import kh.edu.rupp.ite.elec_app.model.model.ListProducts2
@@ -21,17 +22,16 @@ class ProductsViewModel: ViewModel() {
     private val _products1Data = MutableLiveData<ApiData<List<ListProducts1>>>();
     val products1Data: LiveData<ApiData<List<ListProducts1>>>
         get() = _products1Data
+
+    val apiClient = ApiClient.get();
+
     fun showProducts1(){
         val apiData = ApiData<List<ListProducts1>>(Status.PROCESSING, null);
         _products1Data.postValue(apiData);
-        //Create retrofit client
-        val httpClient = Retrofit.Builder()
-            .baseUrl("https://retoolapi.dev")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build();
 
-        //Create Service Object
-        val apiService = httpClient.create(ApiService::class.java);
+
+        //Create api Service
+        val apiService = apiClient.apiServince;
 
         //Load ListProduct1 from server
         val task: Call<List<ListProducts1>> = apiService.loadListProducts1();
@@ -65,14 +65,8 @@ class ProductsViewModel: ViewModel() {
     val products2Data: LiveData<ApiData<List<ListProducts2>>>
         get() = _products2Data
     fun showProducts2(){
-        //Create retrofit Client
-        val httpClient = Retrofit.Builder()
-            .baseUrl("https://retoolapi.dev")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build();
 
-        //Create Service Object
-        val apiService = httpClient.create(ApiService::class.java);
+        val apiService = apiClient.apiServince;
 
         //Load ListProduct1 from server
         val task: Call<List<ListProducts2>> = apiService.loadListProducts2();
