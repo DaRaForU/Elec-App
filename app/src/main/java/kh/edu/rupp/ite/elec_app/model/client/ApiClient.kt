@@ -22,6 +22,6 @@ class ApiClient private constructor() {
         .build();
 
     //Create Service Object
-    val apiServince = httpClient.create(ApiService::class.java);
+    val apiService = httpClient.create(ApiService::class.java);
 
 }
