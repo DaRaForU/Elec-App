@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.ElecApp" parent="Base.Theme.ElecApp" />
+    <style name="Theme.HomeFragment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#FDECE3</item>
+        <item name="colorPrimaryDark" tools:targetApi="23">#000000</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <style name="Theme.SplashActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#FDECE3</item>
+        <item name="colorPrimaryDark" tools:targetApi="23">#000000</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
 </resources>
