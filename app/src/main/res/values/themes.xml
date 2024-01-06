@@ -17,4 +17,12 @@
         <item name="colorPrimaryDark" tools:targetApi="23">#000000</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
     </style>
+    <style name="Theme.Authorization" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#8C7FD8</item>
+    </style>
+    <style name="Theme.DetailsActivity" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#EEF1FF</item>
+        <item name="colorPrimaryDark" tools:targetApi="23">#000000</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
 </resources>

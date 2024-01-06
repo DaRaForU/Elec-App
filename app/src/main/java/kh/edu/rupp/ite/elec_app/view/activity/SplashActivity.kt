@@ -8,6 +8,7 @@ import android.view.animation.ScaleAnimation
 import androidx.appcompat.app.AppCompatActivity
 import kh.edu.rupp.ite.elec_app.R
 import kh.edu.rupp.ite.elec_app.databinding.ActivitySplashBinding
+import kh.edu.rupp.ite.elec_app.view.fragment.HomeFragment
 
 class SplashActivity: AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding
