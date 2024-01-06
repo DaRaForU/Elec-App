@@ -19,6 +19,7 @@ class ProductDetailsActivity: AppCompatActivity() {
         cardView.setBackgroundResource(R.drawable.bg_card_body_product_details);
 
         binding.icBack.setOnClickListener { finish(); }
+        binding.txtBack.setOnClickListener { finish() }
 
         //Get Data From HomeFragment
         val name = intent.getStringExtra("name");

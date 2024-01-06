@@ -1,5 +1,6 @@
 package kh.edu.rupp.ite.elec_app.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kh.edu.rupp.ite.elec_app.R
@@ -16,5 +17,14 @@ class SignInActivity: AppCompatActivity() {
 
         val cardView = binding.cardBodySignIn;
         cardView.setBackgroundResource(R.drawable.bg_card_body_sign_in);
+
+        setUpListener()
+
+    }
+
+    private fun setUpListener(){
+        binding.joinNow.setOnClickListener{
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
     }
 }

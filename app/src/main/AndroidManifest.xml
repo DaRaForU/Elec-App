@@ -26,7 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.MainActivity" android:theme="@style/Theme.HomeFragment"/>
-        <activity android:name=".view.activity.ProductDetailsActivity"/>
+        <activity android:name=".view.activity.SignInActivity" android:theme="@style/Theme.Authorization"/>
+        <activity android:name=".view.activity.SignUpActivity" android:theme="@style/Theme.Authorization"/>
+        <activity android:name=".view.activity.ProductDetailsActivity" android:theme="@style/Theme.DetailsActivity"/>
     </application>
 
 </manifest>
