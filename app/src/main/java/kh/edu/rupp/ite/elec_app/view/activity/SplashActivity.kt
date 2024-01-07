@@ -42,7 +42,7 @@ class SplashActivity: AppCompatActivity() {
         zoomOutAnimation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {
                 // Navigate to the next activity (e.g., main activity)
-                startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                startActivity(Intent(this@SplashActivity, SignUpActivity::class.java))
                 finish()
             }
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51886897445",
+    "project_id": "elec-app-3edae",
+    "storage_bucket": "elec-app-3edae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51886897445:android:9b61db78cfc62c7e9d82cc",
+        "android_client_info": {
+          "package_name": "kh.edu.rupp.ite.elec_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY0-5_9cC3DKm5nnL_KksX7ADO3YnIkX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
