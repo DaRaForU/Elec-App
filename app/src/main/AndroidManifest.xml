@@ -29,6 +29,7 @@
         <activity android:name=".view.activity.SignInActivity" android:theme="@style/Theme.Authorization"/>
         <activity android:name=".view.activity.SignUpActivity" android:theme="@style/Theme.Authorization"/>
         <activity android:name=".view.activity.ProductDetailsActivity" android:theme="@style/Theme.DetailsActivity"/>
+        <activity android:name=".view.activity.ForgotPasswordActivity" android:theme="@style/Theme.Authorization"/>
     </application>
 
 </manifest>
