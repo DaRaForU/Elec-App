@@ -45,5 +45,8 @@ class SignInActivity: AppCompatActivity() {
                 Toast.makeText(this, "Empty Fields Are not Allowed!!", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.txtForgotPassword.setOnClickListener{
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
+        }
     }
 }
