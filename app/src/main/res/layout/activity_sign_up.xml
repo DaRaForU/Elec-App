@@ -74,15 +74,16 @@
                             android:id="@+id/editUsername"
                             android:layout_width="0dp"
                             android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
                             android:background="@drawable/bg_edit_text"
                             android:hint="@string/username"
                             app:layout_constraintStart_toEndOf="@id/logoUsername"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toTopOf="@id/viewLine"
-                            android:layout_marginTop="0dp"/>
+                            android:layout_marginTop="0dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="15sp"/>
 
                         <View
                             android:id="@+id/viewLine"
@@ -111,14 +112,15 @@
                             android:id="@+id/editEmail"
                             android:layout_width="0dp"
                             android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="20dp"
                             android:background="@drawable/bg_edit_text"
                             android:hint="@string/email"
                             app:layout_constraintStart_toEndOf="@id/logoEmail"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@id/viewLine"
-                            app:layout_constraintBottom_toTopOf="@id/viewLine1"/>
+                            app:layout_constraintBottom_toTopOf="@id/viewLine1"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="15sp"/>
 
                         <View
                             android:id="@+id/viewLine1"
