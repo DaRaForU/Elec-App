@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import kh.edu.rupp.ite.elec_app.view.fragment.HomeFragment
-import kh.edu.rupp.ite.elec_app.view.fragment.MessageFragment
 import kh.edu.rupp.ite.elec_app.view.fragment.ProfileFragment
 import kh.edu.rupp.ite.elec_app.R
-import kh.edu.rupp.ite.elec_app.view.fragment.TutorialFragment
 import kh.edu.rupp.ite.elec_app.databinding.ActivityMainBinding
 import nl.joery.animatedbottombar.AnimatedBottomBar
 
@@ -30,9 +28,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 when(newIndex){
                     0 -> showFragment(HomeFragment());
-                    1 -> showFragment(TutorialFragment());
-                    2 -> showFragment(MessageFragment());
-                    3 -> showFragment(ProfileFragment());
+                    1 -> showFragment(ProfileFragment());
                 }
             }
 

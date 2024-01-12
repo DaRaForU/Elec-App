@@ -7,16 +7,6 @@
         android:icon="@drawable/ic_home"/>
 
     <item
-        android:id="@+id/mnuTutorial"
-        android:title="@string/tutorial"
-        android:icon="@drawable/ic_tutorial"/>
-
-    <item
-        android:id="@+id/mnuMessage"
-        android:title="@string/message"
-        android:icon="@drawable/ic_message"/>
-
-    <item
         android:id="@+id/mnuProfile"
         android:title="@string/profile"
         android:icon="@drawable/ic_profile"/>
