@@ -79,6 +79,16 @@
                     />
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem"
+                android:textSize="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
             <Button
                 android:id="@+id/btnLogOut"
                 android:layout_width="100dp"
